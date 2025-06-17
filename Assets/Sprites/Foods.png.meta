@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: 3478696898630265609
     second: Foods_4
+  - first:
+      213: 2359628389229301742
+    second: Foods_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -217,9 +220,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 265
-        y: 36
-        width: 34
-        height: 34
+        y: 17
+        width: 54
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,6 +233,28 @@ TextureImporter:
       bones: []
       spriteID: 90b2c1cf560d64030800000000000000
       internalID: 3478696898630265609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foods_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 18
+        width: 66
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef80f5a4851fb020800000000000000
+      internalID: 2359628389229301742
       vertices: []
       indices: 
       edges: []
@@ -253,6 +278,7 @@ TextureImporter:
       Foods_2: -2860202713576427454
       Foods_3: 8326203587107148169
       Foods_4: 3478696898630265609
+      Foods_5: 2359628389229301742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

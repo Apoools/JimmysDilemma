@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public float gameTime = 60f; // total time limit in seconds
+    public float gameTime = 90f; // total time limit in seconds
     private float timeRemaining;
 
     public int money = 0;
