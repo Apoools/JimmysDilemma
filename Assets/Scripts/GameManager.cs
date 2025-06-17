@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
 
         if (money >= quota)
         {
-            EndGame(true);
+            //EndGame(true);
         }
     }
 

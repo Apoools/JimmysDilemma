@@ -38,7 +38,7 @@ public class OrderManager : MonoBehaviour
             Sprite foodSprite = customer.currentOrder;
 
             customer.HideOrder();
-            StartCoroutine(SpawnFoodAfterDelay(foodSprite, 1.5f)); // 👈 Calls Step 3 here
+            StartCoroutine(SpawnFoodAfterDelay(foodSprite, 1.5f));
         }
         else
         {
@@ -46,21 +46,20 @@ public class OrderManager : MonoBehaviour
         }
     }
 
-    // ✅ Step 3 code goes here
     private IEnumerator SpawnFoodAfterDelay(Sprite food, float delay)
     {
         yield return new WaitForSeconds(delay);
 
-        if (nextPlateIndex >= plateSlots.Length)
+        Transform spawnPoint = plateSlots[nextPlateIndex];
+
+        // Destroy any existing plate at the slot (optional but recommended)
+        foreach (Transform child in spawnPoint)
         {
-            Debug.LogWarning("All plate slots are full!");
-            yield break;
+            Destroy(child.gameObject);
         }
 
-        Transform spawnPoint = plateSlots[nextPlateIndex];
-        GameObject plateInstance = Instantiate(foodOnPlatePrefab, spawnPoint.position, Quaternion.identity);
+        GameObject plateInstance = Instantiate(foodOnPlatePrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
 
-        // Set the food sprite on the child named "Food"
         Transform foodChild = plateInstance.transform.Find("Food");
         if (foodChild != null)
         {
@@ -71,6 +70,7 @@ public class OrderManager : MonoBehaviour
             }
         }
 
-        nextPlateIndex++;
+        // Wrap the index for reuse
+        nextPlateIndex = (nextPlateIndex + 1) % plateSlots.Length;
     }
 }
