@@ -3,9 +3,11 @@
 public class CustomerSitter : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
-    public bool isSeated { get; private set; } = false;
 
-    // Sprites are manually assigned (even if they come from different sheets)
+    public bool isSeated { get; private set; } = false;
+    public SpriteRenderer SpriteRenderer => spriteRenderer;
+
+    [Header("Chair-Specific Sprites")]
     public Sprite sitLeftSprite;
     public Sprite sitRightSprite;
     public Sprite sitCenterSprite;
@@ -16,14 +18,22 @@ public class CustomerSitter : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
-        Debug.Log("[CustomerSitter] SpriteRenderer found: " + (spriteRenderer != null));
+        if (spriteRenderer == null)
+            Debug.LogError("[CustomerSitter] SpriteRenderer not found on customer!");
+        else
+            Debug.Log("[CustomerSitter] SpriteRenderer found: " + spriteRenderer.name);
     }
-
 
     public void SitAtChair(ChairPoint chair)
     {
-        transform.position = chair.sitPoint.position;
+        // Optional: if not already parented correctly, set position
+        if (transform.parent != chair.sitPoint)
+        {
+            transform.SetParent(chair.sitPoint);
+            transform.localPosition = Vector3.zero;
+        }
 
+        // Set sprite based on chair type
         switch (chair.chairType)
         {
             case ChairType.Left:
@@ -37,13 +47,19 @@ public class CustomerSitter : MonoBehaviour
                 break;
         }
 
+        // Flip sprite if needed
         spriteRenderer.flipX = chair.flipSprite;
+
         isSeated = true;
 
-        Debug.Log($"[SitAtChair] Seated on {chair.chairType}, sprite should be: {spriteRenderer.sprite?.name}");
+        Debug.Log($"[SitAtChair] Seated on {chair.chairType}, sprite set to: {spriteRenderer.sprite?.name}");
 
-        // ✅ Add this line to trigger the speech bubble
+        // Trigger order bubble if attached
         GetComponent<CustomerOrderBubble>()?.ShowOrderAfterDelay();
     }
 
+    void OnDestroy()
+    {
+        Debug.Log($"[CustomerSitter] {gameObject.name} has been destroyed.");
+    }
 }
