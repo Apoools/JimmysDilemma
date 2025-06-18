@@ -7596,7 +7596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13de6cd0d4e24174b9ac2fea013a50dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 60
+  gameTime: 120
   money: 0
   quota: 100
   moneyRange: {x: 10, y: 25}
