@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 1a709f5c3734aa648b644750120805c7
+guid: 54402ba141a7f884d95494af595bf34f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6431268773606913935
-    second: jimmy_0
+      213: 9149922251146471446
+    second: new jimmy_0
   - first:
-      213: 1259070400494931486
-    second: jimmy_1
+      213: -401774021463389448
+    second: new jimmy_1
   - first:
-      213: -3405339200941489995
-    second: jimmy_2
+      213: -6968226185414626784
+    second: new jimmy_2
   - first:
-      213: 5736656945636307062
-    second: jimmy_3
+      213: -2746026557978821741
+    second: new jimmy_3
   - first:
-      213: 8349126883276866084
-    second: jimmy_4
+      213: 868279141900291218
+    second: new jimmy_4
   - first:
-      213: 4959449438535507972
-    second: jimmy_5
+      213: 3855977351550955527
+    second: new jimmy_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,11 +128,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jimmy_0
+      name: new jimmy_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
+        x: 30
+        y: 10
+        width: 177
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618270e1fcd0bfe70800000000000000
+      internalID: 9149922251146471446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new jimmy_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 20
         width: 177
         height: 182
       alignment: 0
@@ -143,40 +165,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 178091eef1b8fb6a0800000000000000
-      internalID: -6431268773606913935
+      spriteID: 8fac1baf7ac9c6af0800000000000000
+      internalID: -401774021463389448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jimmy_1
+      name: new jimmy_2
       rect:
         serializedVersion: 2
-        x: 194
-        y: 9
-        width: 177
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1e85b0cbdd197110800000000000000
-      internalID: 1259070400494931486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jimmy_2
-      rect:
-        serializedVersion: 2
-        x: 379
-        y: 16
+        x: 391
+        y: 20
         width: 183
         height: 175
       alignment: 0
@@ -187,18 +187,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b08b2cf90ecdb0d0800000000000000
-      internalID: -3405339200941489995
+      spriteID: 02239cf1433eb4f90800000000000000
+      internalID: -6968226185414626784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jimmy_3
+      name: new jimmy_3
       rect:
         serializedVersion: 2
-        x: 570
-        y: 16
+        x: 583
+        y: 20
         width: 183
         height: 175
       alignment: 0
@@ -209,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 670fde21913bc9f40800000000000000
-      internalID: 5736656945636307062
+      spriteID: 39b32e3056724e9d0800000000000000
+      internalID: -2746026557978821741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jimmy_4
+      name: new jimmy_4
       rect:
         serializedVersion: 2
-        x: 775
-        y: 16
-        width: 217
+        x: 788
+        y: 20
+        width: 230
         height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -231,18 +231,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 422c16e2aae0ed370800000000000000
-      internalID: 8349126883276866084
+      spriteID: 29c09da774fbc0c00800000000000000
+      internalID: 868279141900291218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jimmy_5
+      name: new jimmy_5
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 16
+        x: 1031
+        y: 20
         width: 195
         height: 175
       alignment: 0
@@ -253,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4006b61fcf083d440800000000000000
-      internalID: 4959449438535507972
+      spriteID: 700752da8fe238530800000000000000
+      internalID: 3855977351550955527
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jimmy_0: -6431268773606913935
-      jimmy_1: 1259070400494931486
-      jimmy_2: -3405339200941489995
-      jimmy_3: 5736656945636307062
-      jimmy_4: 8349126883276866084
-      jimmy_5: 4959449438535507972
+      new jimmy_0: 9149922251146471446
+      new jimmy_1: -401774021463389448
+      new jimmy_2: -6968226185414626784
+      new jimmy_3: -2746026557978821741
+      new jimmy_4: 868279141900291218
+      new jimmy_5: 3855977351550955527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
