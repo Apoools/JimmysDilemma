@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
 
         if (won && winScreen != null)
-            winScreen.SetActive(true);
+            loseScreen.SetActive(true);
 
         if (!won && loseScreen != null)
             loseScreen.SetActive(true);
