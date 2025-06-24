@@ -6393,12 +6393,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -6968226185414626784, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  m_Sprite: {fileID: -3405339200941489995, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.77, y: 1.92}
+  m_Size: {x: 1.79, y: 1.83}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6482,10 +6482,10 @@ MonoBehaviour:
   allowSpriteOverride: 0
   movementSpeed: 5
   spriteRenderer: {fileID: 1610929437}
-  spriteUp: {fileID: -2746026557978821741, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
-  spriteDown: {fileID: -6968226185414626784, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
-  spriteLeft: {fileID: 9149922251146471446, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
-  spriteRight: {fileID: -401774021463389448, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  spriteUp: {fileID: 5736656945636307062, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  spriteDown: {fileID: -3405339200941489995, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  spriteLeft: {fileID: -6431268773606913935, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  spriteRight: {fileID: 1259070400494931486, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
 --- !u!114 &1610929442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6517,9 +6517,9 @@ MonoBehaviour:
   rightHandSlot: {fileID: 4250203}
   maxPlates: 2
   spriteRenderer: {fileID: 1610929437}
-  idleSprite: {fileID: -3405339200941489995, guid: 1a709f5c3734aa648b644750120805c7, type: 3}
-  holdRightSprite: {fileID: 4959449438535507972, guid: 1a709f5c3734aa648b644750120805c7, type: 3}
-  holdBothSprite: {fileID: 8349126883276866084, guid: 1a709f5c3734aa648b644750120805c7, type: 3}
+  idleSprite: {fileID: -3405339200941489995, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  holdRightSprite: {fileID: 4959449438535507972, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
+  holdBothSprite: {fileID: 8349126883276866084, guid: 54402ba141a7f884d95494af595bf34f, type: 3}
 --- !u!1 &1631049641
 GameObject:
   m_ObjectHideFlags: 0
